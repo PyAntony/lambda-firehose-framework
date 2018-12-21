@@ -62,7 +62,9 @@ This module contains a third function that will be used in test mode.
 
 - navigate to repository and run "python3 main.py \<sample json file name\>".
 
-- the output records will the printed to screen and saved with name 'sampleOutput.json' in the “test_files” directory. 
+- the output records will the printed to screen and saved with name 'sampleOutput.json' in the “test_files” directory. Sample output:
+
+!(pic1)[https://github.com/PyAntony/aws-lambda-firehose/blob/master/images/pic1.png]
  
 ## Additional Notes
 
