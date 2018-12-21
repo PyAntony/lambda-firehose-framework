@@ -44,7 +44,7 @@ This module contains a third function that will be used in test mode.
 
 - utils.py with all the utility functions.
 
-**Test mode:** this will test the output of the handler after your code has been inserted in the functions mentioned. It will print and save the output json file after transformation and filtering. 
+**Test mode:** mode to review the output of the handler after your code has been inserted in the functions mentioned. It will print and save the output json file after transformation and filtering. 
 
 ## Instructions
 
