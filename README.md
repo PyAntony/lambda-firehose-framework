@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     return {'records': output}
 ```
 
-- main.py where the user adds the code. There are 2 functions here to change, 1 to modify the payload and 1 to filter the record according to logic:
+- main.py where the user adds the code. There are 2 functions here to implement, 1 to modify the payload and 1 to filter the record according to logic:
 ```python
 def modifyPayload(payload):
     '''Transform and return payload.'''
