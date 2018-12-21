@@ -60,7 +60,7 @@ This module contains a third function that will be used in test mode.
 
 - Insert a properly formatted json file with some sample records you are sending to you Firehose instance in the “test_files/input” directory.
 
-- navigate to repository and run "python3 main.py <sample json file name>".
+- navigate to repository and run "python3 main.py \<sample json file name\>".
 
 - the output records will the printed to screen and saved with name 'sampleOutput.json' in the “test_files” directory. 
  
