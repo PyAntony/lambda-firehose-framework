@@ -55,11 +55,8 @@ This module contains a third function that will be used in test mode.
 **Test mode:**
 
 - Clone this repository and enter your custom code for transformation and filtering.
-
 - Insert a properly formatted json file with some sample records you are sending to you Firehose instance in the “test_files/input” directory.
-
 - navigate to repository and run "python3 main.py \<sample json file name\>".
-
 - the output records will the printed to screen and saved with name 'sampleOutput.json' in the “test_files” directory. Sample output:
 
 ![pic1](https://github.com/PyAntony/aws-lambda-firehose/blob/master/images/pic1.png)
@@ -67,13 +64,9 @@ This module contains a third function that will be used in test mode.
 ## Additional Notes
 
 - Note that the handler name to use is “handler.lambda_handler”.
-
 - This framework was tested with Python 3.7 environment. Other environments are not guaranteed.
-
 - If test mode throws json errors make sure the json file you are using is properly formatted: dictionary-like objects separated with new character “\n”, no commas in between, and no empty line at the end. There is a sample file (sample1.json) in the “test_files/input” directory.
-
 - If you try to use the default event template sample (Amazon Kinesis Data Firehose) when testing using the AWS Lambda UI you will get an error (JSONDecodeError) . The reason is the payload used in the template: *'Hello, this is a test 123.'*. This is not in valid json format; hence, the json library can’t load it (json.loads(payload)). Just use the test mode provided. If you really want to test it using the UI you need to change the record payload (‘data’ key) with a proper json object encoded with base64 (function to encode is found in the “utils” module).
-
 - Note that records indicated to be filtered are not actually filtered, they are only marked with the ‘Dropped’ keyword in the ‘result’ key. You will see them printed in the screen and in the 'sampleOutput.json'. For more information go to the documentation: https://docs.aws.amazon.com/firehose/latest/dev/data-transformation.html
 
 ## To Do
