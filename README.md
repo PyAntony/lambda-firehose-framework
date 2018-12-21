@@ -1,6 +1,6 @@
 # AWS Lambda-Firehose Framework
 
-This framework helps to easily create and test AWS lambda functions that work with Kinesis Firehose events. You don’t need to spend time understanding the appropriate input or output formats or decoding/encoding from or to base64. Just enter your code for transformation and filtering logic and the function is ready to be shipped. 
+This framework helps to easily create and test AWS lambda functions that work with Kinesis Firehose events. You don’t need to spend time understanding the appropriate input or output formats or decoding/encoding from or to base64. Just implement 2 functions, 1 for payload transformation and 1 for record filtering. Your function is then ready to be shipped. 
 
 ## Overview
 
