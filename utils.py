@@ -32,7 +32,8 @@ def encodeToBase64(payload):
 
 
 def getRecordsAndDecodePayload(event):
-    '''Decode payloads from event records. Return the list of records.
+    '''
+    Decode payloads from event records. Return the list of records.
     Record format in list -> event["records"]:
     {
         "recordId": Id_number
@@ -53,8 +54,10 @@ def transformRecord(record):
 
 
 def filterRecord(record):
-    '''Wrapper to add 'status' key to record to indicate Firehose
-    we are dropping it.'''
+    '''
+    Wrapper to add 'status' key to record to indicate Firehose
+    we are dropping it.
+    '''
     return updateDict(record, 'status',
                       'Dropped' if filterLogic(record['data']) else 'Ok')
 
