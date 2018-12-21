@@ -64,7 +64,7 @@ This module contains a third function that will be used in test mode.
 
 - the output records will the printed to screen and saved with name 'sampleOutput.json' in the “test_files” directory. Sample output:
 
-!(pic1)[https://github.com/PyAntony/aws-lambda-firehose/blob/master/images/pic1.png]
+![pic1](https://github.com/PyAntony/aws-lambda-firehose/blob/master/images/pic1.png)
  
 ## Additional Notes
 
