@@ -49,9 +49,7 @@ This module contains a third function that will be used in test mode.
 ## Instructions
 
 - Clone this repository.
-
 - Enter your custom code for transformation and filtering in the functions indicated (remember: filtering occurs after transformation).
-
 - Zip the python modules and your lambda function is ready to be deployed using your favorite method.
 
 **Test mode:**
