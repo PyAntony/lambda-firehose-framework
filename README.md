@@ -6,7 +6,7 @@ This framework helps to easily create and test AWS lambda functions that work wi
 
 There are 3 modules:
 
-- handler.py which contains the lambda handler (nothing to adjust here):
+- handler.py which contains the lambda handler (nothing to implement here):
 ```python
 def lambda_handler(event, context):
 
